@@ -1,0 +1,29 @@
+hr {
+  margin: 6 * $base 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+hr.txt-column {
+  margin: 6 * $base auto;
+}
+hr.small ,hr.ellipses {
+  margin: 6 * $base auto;
+  border:none;
+  height: 1px;
+  position: relative;
+}
+hr.ellipses::after {
+  content: '. . .';
+  color: #666;
+  display: block;
+  font-size: 2 * $base;
+  line-height: 1px;
+  text-align: center;
+}
+hr.small::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border-top:1px solid #ccc;
+  margin: 0 auto;
+}

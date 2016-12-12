@@ -1,0 +1,37 @@
+blockquote {
+  margin: 0;
+}
+blockquote, blockquote.txt-column {
+  margin-bottom: 2 * $base;
+  font-weight: bold;
+}
+blockquote.large {
+  font-size: 4 * $base;
+  line-height: 5 * $base;
+}
+blockquote.center-text {
+  text-align: center;
+}
+blockquote.right-text {
+  text-align: right;
+}
+blockquote.right {
+  float: right;
+  max-width: 400px;
+  margin-right: 0;
+  margin-left: 3 * $base;
+}
+blockquote.left {
+  float: left;
+  max-width: 400px;
+  margin-left: 0;
+  margin-right: 3 * $base;
+}
+blockquote.background {
+  background: #ccc;
+  padding: 3 * $base;
+}
+blockquote.border {
+  border: 3px solid #333;
+  padding: 2 * $base;
+}

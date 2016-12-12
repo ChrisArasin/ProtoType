@@ -1,0 +1,51 @@
+/* IMAGES */
+img {
+  width: auto;
+  max-width: 100%;
+  height:auto;
+  display: block;
+  margin-bottom: 2 * $base;
+}
+.img-center {
+  margin: 3 * $base auto;
+}
+.img-right {
+  margin: $base 0 3 * $base 3 * $base;
+  float: right;
+}
+.img-left {
+  margin:$base 3 * $base 2 * $base 0;
+  float: left;
+}
+img.txt-column {
+  margin-bottom: 2 * $base;
+  width: 100%;
+}
+/* must be outside of column div */
+.img-full-bleed {
+  margin: 3 * $base auto;
+  width: 100%;
+}
+.top-cover {
+  margin-bottom: 3 * $base;
+  width: 100%;
+}
+.img-full-pad {
+  padding: 0 3 * $base;
+  width: 100%;
+}
+/* can set a max on full bleed image */
+.max-1600 {
+  max-width: 1600px;
+  margin: 3 * $base auto;
+}
+.img:first-child {
+  margin-top: 0;
+}
+.container.background-image {
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3 * $base;
+}

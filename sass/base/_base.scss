@@ -1,0 +1,19 @@
+body {
+  font-size: $base * 2;
+  line-height: $base * 3;
+}
+.container {
+  padding: $base * 3 $base * 2;
+}
+.container.full-bleed {
+  padding:0;
+}
+.column {
+  max-width:$contentOuterWidth;
+  margin: $columnMargin;
+}
+/* things that depend on primary content column size */
+h1, h2, h3, p, img.txt-column, ul, ol, blockquote.txt-column, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+  max-width: $contentInnerWidth;
+  margin: $textMargin;
+}

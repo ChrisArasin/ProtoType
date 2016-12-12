@@ -1,0 +1,83 @@
+//base unit
+$base: 10px;
+$contentInnerWidth: 650px;
+$contentOuterWidth: 1000px;
+$columnMargin: 0;
+$textMargin: 0 0 0 auto;
+
+@import './base/normalize';
+@import './base/base';
+@import './base/type';
+@import './base/images';
+@import './extras/hr';
+
+body {
+  background: #fdf9f2;
+  -webkit-font-smoothing: antialiased;
+  padding: 30px  0;
+  color: #2f2a23;
+}
+h1, h2 {
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+h1 {
+  padding-top: $base * 4;
+  font-size: 7 * $base;
+  line-height: 8 * $base;
+  margin-bottom: 5 * $base;
+}
+h2 {
+  font-size: 1.9 * $base;
+  line-height: 2 * $base;
+  margin-top: 6 * $base;
+  margin-bottom: 3 * $base;
+}
+p.lede {
+  color: #4797B7;
+  font-family: 'Special Elite', cursive;
+  letter-spacing: .2 * $base;
+  font-size: 2 * $base;
+  line-height: 3 * $base;
+  margin-bottom: 5 * $base;
+}
+p {
+  font-family: "Garamond Premier Pro", Garamond, Times, "Times New Roman", Georgia, serif;
+  font-size: 2 * $base;
+}
+hr.ellipses {
+  margin: $textMargin;
+  margin-top: 6 * $base;
+  margin-bottom: 6 * $base;
+}
+hr.ellipses::after {
+  text-align: left;
+  font-family: 'Special Elite', cursive;
+}
+a:link, a:visited {
+  color: #0094C0;
+}
+.img-left {
+  max-width: 50%;
+}
+div.img-left {
+  margin-bottom:0;
+}
+
+@media (max-width: 850px) {
+  .img-left {
+    float:none;
+    max-width: 650px;
+    margin: 0 30px 0 auto;
+  }
+  h1 {
+    font-size: 5 * $base;
+    line-height: 6 * $base;
+  }
+  h1, h2, h3, p, img.txt-column, ul, ol, blockquote.txt-column, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

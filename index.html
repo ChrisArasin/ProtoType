@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Page | protoType</title>
+    <link rel="stylesheet" type="text/css" href="public/simple-bundle.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="column">
+        <h1>ProtoType CSS Starter kit</h1>
+
+        <p class="lede">A breakdown of the components included</p>
+
+        <h2>Type Styles</h2>
+        <p>These common text elements have some default sizing and have the margin and width of the main text block. Also, there's no default h4, because I rarely find that you need one, but feel free to add it in. </p>
+        <h1>h1: Headline 1</h1>
+        <h2>h2: Headline 2</h2>
+        <h3>h3: Headline 3</h3>
+        <br>
+        <ul>
+          <li>Bulleted list</li>
+          <li>
+            List styles are setup
+            <ul>
+              <li>to be</li>
+              <li>nestable.</li>
+            </ul>
+          </li>
+        </ul>
+        <br>
+        <ol>
+          <li>Ordered</li>
+          <li>List</li>
+        </ol>
+        <p>There's also a default <a href="http://www.google.com">link style</a> using a border instead of underline. You may have strong feelings about this though...</p>
+        <p class="center-text">A utility class to center-align text.</p>
+
+        <p>And a paragraph style for drop-caps:</p>
+        <p class="drop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
+        <hr class="txt-column">
+
+        <h2>Images</h2>
+        <p>Going to show off the image styles with this pretty lion photo from unsplash.</p>
+        <h3>Size to text column</h3>
+        <img class="txt-column" src="img/test-2.jpg">
+
+        <h3>Float Right</h3>
+        <img class="img-right" src="img/test-2.jpg" style="max-width: 350px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Float Left</h3>
+        <img class="img-left" src="img/test-2.jpg" style="max-width: 350px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h3 class="center-text">Centered but not constrained to the main text column</h3>
+        <img class="img-center" src="img/test-2.jpg">
+
+        <h2>A simple grid system for tiling images.</h2>
+        <p>No media queries to break-down the grid, so add as necessary.</p>
+        <div class="grid-container">
+          <div class="grid">
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+          </div>
+        </div>
+        <p>The 'tight' class can be added to reduce the space between grid element.</p>
+        <div class="grid-container">
+          <div class="grid tight">
+            <div class="fourcol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="fourcol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="fourcol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="fourcol">
+              <img src="img/test-2.jpg">
+            </div>
+          </div>
+        </div>
+        <p>Or the 'nopad' class to remove all space.</p>
+        <div class="grid-container">
+          <div class="grid nopad">
+            <div class="sixcol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="sixcol">
+              <img src="img/test-2.jpg">
+            </div>
+          </div>
+          <div class="grid nopad">
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+            <div class="threecol">
+              <img src="img/test-2.jpg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="center-text" style="padding:0 20px;">A full-bleed image outside of the containing divs</p>
+    <img src="img/test-2.jpg" class="img-full-bleed">
+
+    <div class="container background-image center-text" style="padding-top: 12rem; padding-bottom: 12rem; background-image: url('img/test-2.jpg')">
+      <div class="column" >
+        <h2>A container with a background image</h2>
+        <p>Inline styles are used for padding and setting the image, but these can be written into the stylesheets as well if used consistently</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <hr class="txt-column">
+        <h2>Blockquotes</h2>
+        <p>A variety of options for quote styles. These are mostly with pull-quotes in mind more so than academic blockquote style.  </p>
+
+        <p>The default style bolds text. Size to text column.</p>
+        <blockquote class="txt-column">
+           &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&rdquo;
+        </blockquote>
+
+        <p>Don't fit to text column. Center text. Add a background.</p>
+        <blockquote class="center-text background">
+           &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&rdquo;
+        </blockquote>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <h3>Float Right</h3>
+        <blockquote class="right background  ">
+          &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&rdquo;
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Float Left</h3>
+        <blockquote class="left background  ">
+          &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&rdquo;
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h3>Border Style</h3>
+        <blockquote class=" border txt-column">
+           &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&rdquo;
+        </blockquote>
+
+
+        <hr class="txt-column">
+        <h2>A simple code style</h2>
+<pre class="txt-column" ><code>code {
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: Monaco, Consolas, "Andale Mono";
+  display: inline;
+  color: #555555;
+  padding: 1em 1em;
+  background: #f4f4f4;
+}
+</code></pre>
+
+      <hr class="txt-column">
+      <h2>Some hr Styles</h2>
+      <p>These are all center-aligned by default, but that can be changed.</p>
+      <p>Full width</p>
+      <hr>
+      <p>Text-block size</p>
+      <hr class="txt-column">
+      <p>Small</p>
+      <hr class="small">
+      <p>Ellipses</p>
+      <hr class="ellipses">
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

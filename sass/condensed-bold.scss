@@ -1,0 +1,106 @@
+//base unit
+$base: 10px;
+$contentInnerWidth: 650px;
+$contentOuterWidth: 1000px;
+$columnMargin: 0 auto;
+$textMargin: 0 auto;
+
+@import './base/normalize';
+@import './base/base';
+@import './base/type';
+@import './extras/hr';
+
+body {
+  padding: 100px 0 50px 0;
+  border: 30px solid #0c0c0c;
+  background: #222;
+  color: #eaeaea;
+  -webkit-font-smoothing: antialiased;
+  font-family: 	"franklin-gothic-urw"	, serif;
+}
+h1, h2, h3  {
+  font-family:	"league-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 31 * $base;
+  line-height: 28 * $base;
+  padding: 3 * $base 0 0;
+  margin-bottom: 4 * $base;
+  letter-spacing: -.0125em;
+}
+h1 span.small-line {
+  display: block;
+  font-size: 9 * $base;
+  line-height:  10 * $base;
+  letter-spacing: .0125em;
+  color: #00e7ff;
+}
+p.lede {
+  font-weight: bold;
+  font-size: 2.4 * $base;
+}
+h2 {
+  font-size: 6 * $base;
+  line-height: 7 * $base;
+  font-weight: 300;
+  margin: 7 * $base auto 4 * $base;
+  letter-spacing: .02em;
+}
+h2 span.small-line {
+  display: block;
+  font-size: 4 * $base;
+  line-height:  4 * $base;
+  letter-spacing: .0125em;
+  color: #00e7ff;
+}
+a:link, a:visited {
+  border-bottom: 1px solid #666;
+  color: #00e7ff;
+}
+a:hover {
+  border-bottom: 1px solid #eaeaea;
+  color: #00e7ff;
+}
+hr.small {
+  margin: 9 * $base auto 12 * $base;
+}
+hr.small::after {
+ width: 30px;
+ border-top: 30px solid #fff;
+ margin: 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    border: 10px solid #0c0c0c;
+    padding: 40px 0;
+  }
+  h1 {
+    font-size: 10 * $base;
+    line-height: 10 * $base;
+  }
+  h1 span.small-line {
+    font-size: 5 * $base;
+    line-height:  6 * $base;
+  }
+  h2 {
+    font-size: 5 * $base;
+    line-height: 5 * $base;
+  }
+  h2 span.small-line {
+    font-size: 3 * $base;
+    line-height:  4 * $base;
+  }
+  hr.small {
+    margin: 4 * $base auto 6 * $base;
+  }
+  hr.small::after {
+   width: 20px;
+   border-top: 20px solid #fff;
+   margin: 0;
+  }
+}

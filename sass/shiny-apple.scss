@@ -1,0 +1,45 @@
+//base unit
+$base: 9px;
+$contentInnerWidth: 650px;
+$contentOuterWidth: 1000px;
+$columnMargin: 0 auto;
+$textMargin: 0 auto;
+
+@import './base/normalize';
+@import './base/base';
+@import './base/type';
+@import './base/images';
+@import './extras/hr';
+
+body {
+  font-family: "Myriad Pro", Myriad, Calibri, "Helvetica Neue", Helvetica, sans-serif ;
+}
+h1 {
+  font-size: 5 * $base;
+  line-height: 6 * $base;
+  font-weight: 300;
+  text-align: center;
+}
+p.lede {
+  font-weight: 300;
+  color: #888;
+  font-size: 3 * $base;
+  line-height: 4 * $base;
+  text-align: center;
+  margin-bottom: 4 * $base;
+}
+h2 {
+  font-size:3.5 * $base;
+  line-height: 4 * $base;
+  font-weight: 300;
+  margin: 7 * $base auto 4 * $base;
+  text-align: center;
+}
+a {
+  border-bottom: none;
+  color: #08c;
+}
+a:hover {
+  border-bottom: 1px solid;
+  color: #08c;
+}

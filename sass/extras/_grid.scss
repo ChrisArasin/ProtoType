@@ -1,0 +1,50 @@
+.grid-container {
+  margin-bottom: 3 * $base;
+}
+.grid {
+  margin-left: -1 * $base;
+  margin-right: -1 * $base;
+}
+.grid:before, .grid:after, .column:before, .column:after {
+    display: table;
+    content: " ";
+}
+.grid:after, .column:after {
+  clear: both;
+}
+.grid.tight {
+  margin-left: -.5 * $base;
+  margin-right: -.5 * $base;
+}
+
+.grid.nopad {
+  margin: 0;
+}
+.grid.tight img{
+  margin-bottom: $base;
+}
+.grid.nopad img{
+  margin-bottom: 0;
+}
+.grid.tight img + *, .grid.nopad img + *{
+  margin-top: 2 * $base;
+}
+.sixcol {
+  width: 50%;
+}
+.threecol {
+  width: 33.3332%;
+}
+.fourcol {
+  width: 25%;
+}
+.sixcol, .fourcol, .threecol {
+  float: left;
+  padding: 0 1 * $base;
+}
+.tight .sixcol, .tight .fourcol, .tight .threecol  {
+  padding: 0 .5 * $base;
+}
+.nopad .sixcol, .nopad .fourcol, .nopad .threecol  {
+  padding: 0;
+}

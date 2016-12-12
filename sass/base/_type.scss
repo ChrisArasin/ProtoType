@@ -1,0 +1,50 @@
+p {
+  margin-bottom: 2 * $base;
+}
+p.lede {
+  font-size: 2.4 * $base;
+  line-height: 3 * $base;
+  margin-bottom: 2 * $base;
+}
+h1 {
+  font-size: 4 * $base;
+  line-height: 5 * $base;
+  margin-bottom: 2 * $base;
+}
+h2 {
+  font-size: 3 * $base;
+  line-height: 4 * $base;
+  margin-top: 4 * $base;
+  margin-bottom: 1 * $base;
+}
+h3 {
+  font-size:2.2 * $base;
+  line-height: 3 * $base;
+  margin-top: 4 * $base;
+  margin-bottom: 1 * $base;
+}
+h2:first-child, h3:first-child {
+  margin-top:0;
+}
+ul, ol {
+  padding: 0 0 0 2 * $base;
+  margin-bottom: 2 * $base;
+}
+li {
+  margin-bottom: $base;
+}
+li ul {
+  margin-top: $base;
+}
+a, a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: border .2s;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+.center-text  {
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+p.drop::first-letter, p.drop:first-letter {
+  display: block;
+  float: left;
+  font-size: 5 * $base;
+  line-height: 6 * $base;
+  padding: 0 1 * $base 0 0;
+  font-weight: bold;
+}

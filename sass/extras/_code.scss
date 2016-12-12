@@ -1,0 +1,15 @@
+/* CODE */
+pre {
+    white-space: pre;
+    display: block;
+    color: #333;
+    margin: 3 * $base auto !important;
+    background: #f4f4f4;
+    overflow-x: scroll;
+    padding: 2 * $base;
+    max-width: none;
+}
+code {
+    font-size: 1.8 * $base;
+    line-height: 3 * $base;
+}
