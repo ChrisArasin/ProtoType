@@ -13,7 +13,7 @@ body {
   margin: $columnMargin;
 }
 /* things that depend on primary content column size */
-h1, h2, h3, p, img.txt-column, ul, ol, blockquote.txt-column, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+h1, h2, h3, p, img.txt-column, ul, ol, blockquote.txt-column, .grid.txt-column, hr.txt-column, .ellipses, .small, pre.txt-column {
   max-width: $contentInnerWidth;
   margin: $textMargin;
 }

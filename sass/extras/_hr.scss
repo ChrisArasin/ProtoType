@@ -6,13 +6,15 @@ hr {
 hr.txt-column {
   margin: 6 * $base auto;
 }
-hr.small ,hr.ellipses {
+// IE doesn't like an after selector for hr's
+// so use a div or span.
+.small, .ellipses {
   margin: 6 * $base auto;
   border:none;
   height: 1px;
   position: relative;
 }
-hr.ellipses::after {
+.ellipses::after {
   content: '. . .';
   color: #666;
   display: block;
@@ -20,7 +22,7 @@ hr.ellipses::after {
   line-height: 1px;
   text-align: center;
 }
-hr.small::after {
+.small::after {
   content: '';
   display: block;
   width: 50px;

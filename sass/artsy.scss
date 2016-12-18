@@ -47,12 +47,12 @@ p {
   font-family: "Garamond Premier Pro", Garamond, Times, "Times New Roman", Georgia, serif;
   font-size: 2 * $base;
 }
-hr.ellipses {
+.ellipses {
   margin: $textMargin;
   margin-top: 6 * $base;
   margin-bottom: 6 * $base;
 }
-hr.ellipses::after {
+.ellipses::after {
   text-align: left;
   font-family: 'Special Elite', cursive;
 }
@@ -65,7 +65,6 @@ a:link, a:visited {
 div.img-left {
   margin-bottom:0;
 }
-
 @media (max-width: 850px) {
   .img-left {
     float:none;

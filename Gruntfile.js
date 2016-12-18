@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	var themeName = 'theme-name';
+	var themeName = 'simple';
 	var outFile = 'public/' + themeName + '-bundle.css';
 	var inFile = 'sass/' + themeName + '.scss'
 	grunt.initConfig({

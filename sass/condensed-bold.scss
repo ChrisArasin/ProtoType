@@ -65,10 +65,10 @@ a:hover {
   border-bottom: 1px solid #eaeaea;
   color: #00e7ff;
 }
-hr.small {
+.small {
   margin: 9 * $base auto 12 * $base;
 }
-hr.small::after {
+.small::after {
  width: 30px;
  border-top: 30px solid #fff;
  margin: 0;
@@ -95,10 +95,10 @@ hr.small::after {
     font-size: 3 * $base;
     line-height:  4 * $base;
   }
-  hr.small {
+  .small {
     margin: 4 * $base auto 6 * $base;
   }
-  hr.small::after {
+  .small::after {
    width: 20px;
    border-top: 20px solid #fff;
    margin: 0;
