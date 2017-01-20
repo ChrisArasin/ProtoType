@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
-	var themeName = 'simple';
-	var outFile = 'public/' + themeName + '-bundle.css';
-	var inFile = 'sass/' + themeName + '.scss'
+  var themeName = 'simple';
+  var outFile = 'public/' + themeName + '-bundle.css';
+  var inFile = 'sass/' + themeName + '.scss'
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		sass: {
+			sass: {
 			dist: {
         options: {
           style: 'compressed'
